@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
+import feeslip from "./feeslip.pdf";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
@@ -71,7 +72,7 @@ export function Navbar() {
           </div>
 
           <motion.a
-            href="#"
+            href={feeslip}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="hidden lg:flex items-center gap-2 px-5 py-2 rounded-lg font-medium bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg shadow-purple-500/20"
