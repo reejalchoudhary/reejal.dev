@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-white;
+  font-family: system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(56,189,248,0.08), transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(168,85,247,0.08), transparent 40%),
+    #030712;
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.glow {
+  position: absolute;
+  width: 650px;
+  height: 650px;
+  border-radius: 50%;
+  filter: blur(140px);
+  opacity: 0.6;
+  z-index: 0;
+  animation: float 12s ease-in-out infinite;
+}
+
+.glow-blue {
+  background: radial-gradient(circle, rgba(56,189,248,0.35), transparent 60%);
+}
+
+.glow-purple {
+  background: radial-gradient(circle, rgba(168,85,247,0.35), transparent 60%);
+}
+
+.glow-cyan {
+  background: radial-gradient(circle, rgba(34,211,238,0.35), transparent 60%);
+}
+
+@keyframes float {
+  0%,100% { transform: translate(0px, 0px); }
+  50% { transform: translate(40px, -60px); }
+}
+
+.particles {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.particle {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: rgba(56,189,248,0.6);
+  border-radius: 50%;
+  animation: floatParticle linear infinite;
+}
+
+@keyframes floatParticle {
+  from {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-120vh);
+    opacity: 0;
+  }
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 0 40px rgba(0,0,0,0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.glass::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.08),
+    transparent
+  );
+  opacity: 0;
+  transition: 0.6s;
+}
+
+.glass:hover::before {
+  opacity: 1;
+  transform: translateX(100%);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #38bdf8, #8b5cf6, #22c55e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-glow {
+  background: linear-gradient(to right, #38bdf8, #8b5cf6);
+  box-shadow: 0 0 25px rgba(139,92,246,0.4);
+  transition: all 0.3s ease;
+}
+
+.btn-glow:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 45px rgba(139,92,246,0.6);
+}
+
+.gradient-border {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  background: linear-gradient(
+    45deg,
+    #38bdf8,
+    #8b5cf6,
+    #22c55e,
+    #38bdf8
+  );
+  background-size: 300% 300%;
+  animation: borderAnim 6s linear infinite;
+  z-index: -1;
+}
+
+@keyframes borderAnim {
+  0% { background-position: 0% }
+  100% { background-position: 300% }
+}
