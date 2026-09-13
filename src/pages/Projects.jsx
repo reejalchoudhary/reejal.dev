@@ -4,6 +4,19 @@ import { ExternalLink, GitBranch } from "lucide-react";
 export function Projects() {
 
   const projects = [
+
+    {  
+      title: "Button Adda",
+      description:
+        "A modern React button library with 49+ animated, interactive, and highly customizable buttons built to make web interfaces more engaging.",
+      image:
+        "https://github.com/reejalchoudhary/site-buttonadda/blob/main/public/image.png?raw=true",
+      tags: ["React", "UI Library", "Component", "Animated Buttons", "Open Source"],
+      liveUrl:
+        "https://button-adda.netlify.app",
+      githubUrl:
+        "https://www.npmjs.com/package/button-adda",
+    }, 
          
    {  
       title: "BUGVINASH ",
