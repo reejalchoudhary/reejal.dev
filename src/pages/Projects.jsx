@@ -5,6 +5,19 @@ export function Projects() {
 
   const projects = [
 
+        {  
+      title: "Jawali Now",
+      description:
+        "wali Now is a modern local discovery app built for Jawali, Himachal Pradesh. Discover nearby places, local businesses, attractions, services, and community spots with an easy-to-use experience designed for the local community.",
+      image:
+        "https://github.com/reejalchoudhary/Jawali-Now/raw/main/assets/1.jpeg",
+      tags: ["Flutter", "Android app", "Local Discovery", "Community App", "Location Based"],
+      liveUrl:
+        "https://github.com/reejalchoudhary/Jawali-Now",
+      githubUrl:
+        "https://github.com/reejalchoudhary/Jawali-Now",
+    },
+
     {  
       title: "Button Adda",
       description:
