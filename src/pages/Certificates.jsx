@@ -4,6 +4,37 @@ import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 
 export function Certificates() {
 const certificates = [
+
+    {
+    title: "Technostrophe '26",
+    organization: "IIT, Dharwad  | UNSTOP",
+    year: "2026",
+    image: "https://i.postimg.cc/qBGGzY2b/7ea863f9-ecc9-4ede-8924-6ab29e552132.png",
+    url: "https://i.postimg.cc/gjMR4CDz/5b11aa80-80d7-4c0e-8736-a6b73834d26b.png",
+  },
+
+  {
+    title: "CaseVerse 2.0 - Case Study Competition",
+    organization: "NIT, Rourkela | UNSTOP",
+    year: "2026",
+    image: "https://i.postimg.cc/qBGGzY2b/7ea863f9-ecc9-4ede-8924-6ab29e552132.png",
+    url: "https://unstop.com/certificate-preview/7ea863f9-ecc9-4ede-8924-6ab29e552132",
+  },
+    {
+    title: "Spectra - Case Study",
+    organization: "Indian Institute of Management Bangalore | UNSTOP",
+    year: "2026",
+    image: "https://i.postimg.cc/fb68f9LZ/ac5de315-c403-4643-a555-c38edcca4e7d.png",
+    url: "https://unstop.com/certificate-preview/ac5de315-c403-4643-a555-c38edcca4e7d",
+  },
+    {
+    title: "Ideathon 2026",
+    organization: "NIT, DURGAPUR | UNSTOP",
+    year: "2026",
+    image: "https://i.postimg.cc/zvYP8gZn/nit.jpg",
+    url: "https://unstop.com/certificate-preview/71b80d10-cfcd-4388-af1b-f1e11b1fd461",
+  },
+
   {
     title: "The Math-O-Logic Challenge!",
     organization: "University of Allahabad, Uttar Pradesh | UNSTOP",
